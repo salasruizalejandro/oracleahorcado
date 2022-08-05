@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script  defer src="juego.js" ></script>
+  
+    
+    <title>Juego Ahorcado</title>
+</head>
+<body>
+    <header>
+        <section >
+            <img id="LogoAlura" src="Img/CirculoLogo.png" alt="LogoSolo">            
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="containerJuegoCanvas">
+                <canvas id="ahorcado" height="860px" width="1200" >
+                </canvas>
+            </div>
+        </section>
+        <section id="botonesPalabrasNuevas"  >
+            <div>
+                <button id="btnNuevoJuego" onclick="nuevoJuego()" >Nuevo Juego</button>
+            </div>
+            <div>
+                <button id="btnDesistir" onclick="desistir()">Limpiar</button>
+            </div>
+            <div class="container">
+                <input type="text" id="cincoPalabras" autofocus placeholder="Ingrese sus 5 palabras">
+                <button id="anadir" onclick="anadir5Palabras()">Añadir</button>
+                <button id="anadir" onclick="LimpiarPalabras()">Limpiar Palabras</button>
+            </div>
+        </section>
+
+
+        
+    </main>
+    
+</body>
+</html>
